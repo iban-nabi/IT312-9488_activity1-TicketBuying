@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCA Ticket Reservation</title>
+    <link rel="stylesheet" href="style/ticketstyle.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="libraries/chart.js/dist/chart.min.js"></script>
+    <script type="text/javascript" src="./script.js" defer></script>
+    <script type="text/javascript" src="./statistics.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div onclick="window.location.href='Ticket.html'">
+            <h1>CCA Ticket Reservation</h1>
+        </div>
+    </header>
+
+    <div class="banner-text">
+        <p>Thank you for using the CCA Reservation System!</p>
+    </div>
+    <div class="containers">
+
+        <div class="yellow-container">
+            <div class="line"> </div>
+            <h2 id="event-venue">null</h2>
+            <p id="event-title">null</p>
+            <p id="event-theme">null</p>
+            <p id="cca">null</p>
+            <div class="line2"> </div>
+            <p id="day">null</p>
+            <p id="date">null</p>
+            <p id="time">null</p>
+            <div class="line3"> </div>
+            <p class="section">Section</p>
+            <p id="sec-value">null</p>
+            <p class="seat">Seat</p>
+            <p id="seat-value">null</p>
+            <div class="logo">
+                <div class="img">
+                    <img src="style/cca-logo.png" alt="img">
+                </div>
+                <div class="img2">
+                    <img src="style/cca-logo.png" alt="img">
+                </div>
+                <div class="img3">
+                    <img src="style/cca-logo.png" alt="img">
+                </div>
+                <div class="img4">
+                    <img src="style/cca-logo.png" alt="img">
+                </div>
+            </div>
+            <div class="brown-container">
+                <div class="logo2">
+                    <p class="name-title"><span class="bold">Name:</span></p>
+                    <p id="name">null</p>
+                    <p class="contact-title"><span class="bold">Contact Number:</span></p>
+                    <p id="contact">null</p>
+                    <p class="address-title"><span class="bold">Address:</span></p>
+                    <p id="address">null</p>
+                    <div class="line4"> </div>
+                    <p class="price-title"><span class="bold">Price:</span></p>
+                    <p id="price">null</p>
+                    <p class="dot-title"><span class="bold">Purchased:</span></p>
+                    <p id="dot">null</p>
+                    <div class="img-set2-1">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                    <div class="img-set2-2">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                    <div class="img-set2-3">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                    <div class="img-set2-4">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                </div>
+
+                <div class="logo3">
+                    <div class="img-set3-1">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                    <div class="img-set3-2">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                    <div class="img-set3-3">
+                        <img src="style/cca-logo.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chart-container">
+        <div>
+            <h1>Reservation Statistics</h1>
+            <canvas id="reserveChart"></canvas>
+            <p>Note: Select on the graph legends to filter</p>
+        </div>
+        <div>
+            <h1>Seats Available</h1>
+            <canvas id="seatsAvailChart"></canvas>
+            <p>Note: Select on the graph legends to filter</p>
+        </div>
+        <div>
+            <h1>Age Demographic</h1>
+            <canvas id="ageChart"></canvas>
+            <p>Note: Select on the graph legends to filter</p>
+        </div>
+    </div>
+</body>
+
+</html>

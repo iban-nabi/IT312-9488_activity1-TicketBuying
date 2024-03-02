@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCA Ticket Reservation</title>
+    <link rel="icon" type="image/png" href="images/SLU-CCA-2023-628x628.png">
+    <link rel="stylesheet" href="style/event_style.css">
+    <script type="text/javascript" src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src='images/SLU-logo.png' alt='CCA-logo' />
+        </div>
+        <h1>SAINT LOUIS UNIVERSITY</h1>
+    </header>
+
+    <div class="banner-grid">
+        <div class="banner-img">
+            <h3>CCA Ticket Reservation</h3>
+            <img class="banner" src='images/SLU-CCA-2023-628x628.png' alt='CCA-logo' />
+        </div>
+
+        <main>
+            <div class="container">
+                <div class="intro">
+                    <h1 class="bold">Event Details</h1>
+                    <section>
+                        <p class="light">Please select the event that you wish to make a reservation for.</p>
+                    </section>
+                </div>
+                <div class="information">
+                    <form>
+                        <div class="input-box">
+                            <label for="event-input">Event Name:</label>
+                            <select id="event-input" required>
+                                <option value="" disabled selected>Choose an event.</option>
+                                <option value="event1">Entablado</option>
+                                <option value="event2">Perlas ng Silangan</option>
+                                <option value="event3">Pinoy Soundtrip</option>
+                                <option value="event4">Pagninilay-nilay</option>
+                                <option value="event5">Sulyap ng Musika</option>
+                                <option value="event6">Cantate Domino</option>
+
+                            </select>
+                        </div><br>
+
+                        <div class="input-box">
+                            <label for="date-input">Date:</label>
+                            <input type="text" id="date" name="date" disabled>
+                        </div><br>
+
+                        <div class="input-box">
+                            <label for="venue">Venue:</label>
+                            <input type="text" id="venue" name="venue" disabled>
+                        </div><br>
+
+
+                        <div class="input-box">
+                            <label for="seat-input">Type of Seat:</label>
+                            <select id="seat-input" required>
+                                <option value="" disabled selected>Choose the type of seat.</option>
+                                <option value="seat1">Balcony</option>
+                                <option value="seat2">Orchestra</option>
+                            </select>
+                        </div>
+
+
+                        <div class="price">
+                            <h5>Total Price: <span id="ticket-price"></span> </h5>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="btn btn-success">Submit Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <div class="copyright">
+            <p> &copy; SLU | DataBeasts | All Rights Reserved.</p>
+            <img src='images/SLU-Logo.png' alt='SLU-logo' />
+        </div>
+    </footer>
+
+</body>
+
+</html>
